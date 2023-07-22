@@ -1,66 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Página Web</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+      /* Estilos generales */
+      body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-    nav {
-      background-color: #444;
-      padding: 5px;
-    }
+        header h1 {
+            font-size: 36px;
+            color:#1F1F1F;
+            margin: 0;
+        }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px;
-    }
+        .imagen-cabecera {
+          width: 150px; /* Ajusta el ancho deseado en píxeles o porcentaje */
+          height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+          display: block; /* Para evitar espacios adicionales debajo de la imagen */
+          margin: 0 auto; /* Centra la imagen horizontalmente en la cabecera */
+          border-radius: 50%; /* Aplica bordes redondeados para una apariencia más estilizada (opcional) */
+        }
 
-    nav a:hover {
-      background-color: #555;
-    }
 
-    section {
-      padding: 20px;
-    }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 20px;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+        section {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        section p {
+            font-size: 16px;
+            color: #666666;
+        }
+
+        #habilidades ul,
+        #proyectos ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #habilidades li {
+          display: inline-block;
+          margin-right: 10px;
+          background-color: #4A90E2;
+          color: #ffffff;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+
+        #proyectos li {
+            display: inline-block;
+            margin-right: 10px;
+            background-color: #808080;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #proyectos p {
+          color: #ffffff;
+        }
+
+        #contacto p {
+            font-size: 16px;
+            color: #333333;
+        }
+
+        a {
+            color: #808080;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Mi Página Web</h1>
-  </header>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Acerca de</a>
-    <a href="#">Contacto</a>
-  </nav>
-  <section>
-    <h2>¡Bienvenido a mi página web!</h2>
-    <p>Esta es una página de ejemplo creada con HTML y CSS.</p>
-  </section>
-  <footer>
-    <p>Derechos de autor © 2023 | Mi Página Web</p>
-  </footer>
+    <header>
+        <img src="img/imagen_portafolio.jpg" alt="Mi Logo o Imagen" class="imagen-cabecera">
+        <h1>Santiago Ramírez Aguirre</h1>
+    </header>
+
+    <main>
+        <section id="biografia">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Santiago Ramírez. Soy un Tecnologo en Análisis y desarrollo de software apasionado por el desarrollo web. Con 2 años de experiencia en creación de páginas web, he trabajado en diversos proyectos desafiantes y emocionantes. Mi enfoque es el desarrolo web con html, css y JavaScript. Siempre estoy en busca de nuevos retos que me permitan seguir creciendo como profesional y aportando mi creatividad a cada proyecto.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Photoshop</li>
+                <li>Python</li>
+                <!-- Agrega tus habilidades aquí -->
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <ul>
+                <li>
+                    <h3>Proyecto 1</h3>
+                    <p>Aplicación de control de
+                      inventario en Java</p>
+                </li>
+                <li>
+                    <h3>Proyecto 2</h3>
+                    <p>Aplicación de Tienda en Python</p>
+                </li>
+                <!-- Agrega más proyectos aquí -->
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme en santiramirez0127@gmail.com o a través de mis redes sociales:</p>
+            <!-- Agrega enlaces a tus redes sociales aquí -->
+        </section>
+    </main>
 </body>
 </html>
